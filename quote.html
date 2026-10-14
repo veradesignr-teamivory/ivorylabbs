@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get a Free Quote | Ivorylabbs LLC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-root="">
+    <header class="header" data-header></header>
+    <main>
+      <section class="wrap quote-page">
+        <p class="kicker gold-dim">Free quote</p>
+        <h1 class="serif">Tell us what you need. We’ll reply within 24 hours.</h1>
+        <p class="lede quiz-sub">No payment required. We’ll review your brief and send a detailed quote before any work begins.</p>
+        <div class="brief-preview" data-brief-preview hidden></div>
+        <form class="quote-form" data-quote-form>
+          <label>Full name<input name="name" required></label>
+          <label>Email<input type="email" name="email" required></label>
+          <label>Phone / WhatsApp<input name="phone"></label>
+          <label>What do you need?
+            <select name="need" required>
+              <option value="">Select a starting point</option>
+              <option>Website</option>
+              <option>Web app</option>
+              <option>Mobile app</option>
+              <option>UI/UX design</option>
+              <option>Agency Leads Engine</option>
+              <option>Leads Engine trial</option>
+              <option>Marketing / Google</option>
+              <option>Ready-made script</option>
+              <option>Not sure, advise me</option>
+            </select>
+          </label>
+          <label>Budget
+            <select name="budget">
+              <option>Under $100</option>
+              <option>$100 to $500</option>
+              <option>$500 to $2,000</option>
+              <option>$2,000+</option>
+              <option>Flexible / not sure</option>
+            </select>
+          </label>
+          <label>Project details<textarea name="details" rows="5" required placeholder="Goals, timeline, anything we should see."></textarea></label>
+          <button class="btn btn-gold btn-lg" type="submit">Send my brief</button>
+        </form>
+        <div data-quote-done hidden>
+          <h2 class="serif">We’ve got it.</h2>
+          <p class="lede quiz-sub">Your brief is saved. We’ll send a detailed quote to your email, no payment required.</p>
+          <a class="btn btn-navy btn-lg" href="find-services.html">See what we’d recommend</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" data-footer></footer>
+    <script src="data.js"></script>
+    <script src="cart.js"></script>
+    <script src="app.js"></script>
+    <script src="quote.js"></script>
+  </body>
+</html>

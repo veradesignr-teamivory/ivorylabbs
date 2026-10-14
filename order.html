@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore Services | Ivorylabbs LLC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="market-page" data-root="">
+    <header class="header" data-header></header>
+    <main class="market">
+      <section class="wrap market-hero">
+        <p class="kicker">Explore services</p>
+        <h1 class="serif">Pick the work that<br />moves the needle.</h1>
+        <p class="lede">Build a short plan with us. We quote the outcome, the timeline, and what not to spend on. Nothing to pay until you approve the brief.</p>
+        <a class="quiz-chip" href="find-services.html">Not sure what you need? Take our 2-minute quiz and get a personalised recommendation →</a>
+      </section>
+
+      <section class="wrap">
+        <div class="market-tools">
+          <label class="search">
+            <span class="sr-only">Search services</span>
+            <input type="search" placeholder="Search services…" data-service-search />
+          </label>
+          <div class="filters" data-filters>
+            <button type="button" class="is-on" data-filter="all">All Services</button>
+            <button type="button" data-filter="web">Web</button>
+            <button type="button" data-filter="mobile">Mobile</button>
+            <button type="button" data-filter="marketing">Marketing</button>
+            <button type="button" data-filter="google">Google</button>
+          </div>
+        </div>
+        <p class="market-count" data-service-count></p>
+        <div class="svc-grid" data-service-grid></div>
+
+        <aside class="custom-banner">
+          <div>
+            <h2 class="serif">Don’t see what you need?</h2>
+            <p>Tell us the outcome. We’ll scope it against your budget and reply with a plan.</p>
+          </div>
+          <button type="button" class="btn btn-gold btn-lg" data-open-custom>+ Custom service</button>
+        </aside>
+      </section>
+    </main>
+
+    <div class="overlay" data-service-modal hidden>
+      <div class="modal" data-modal-body></div>
+    </div>
+    <div class="overlay" data-custom-modal hidden>
+      <form class="modal custom-form" data-custom-form>
+        <div class="modal-head">
+          <span class="svc-cat">Custom work</span>
+          <button type="button" class="modal-close" data-close-modal aria-label="Close">×</button>
+        </div>
+        <h2>Tell us what to build</h2>
+        <label>Name<input name="name" required /></label>
+        <label>Email<input type="email" name="email" required /></label>
+        <label>What do you need?<textarea name="need" rows="4" required></textarea></label>
+        <button class="btn btn-gold btn-lg modal-cta" type="submit">Send request</button>
+      </form>
+    </div>
+
+    <footer class="footer" data-footer></footer>
+    <a class="wa" href="quote.html" aria-label="Chat with Ivorylabbs">WA</a>
+    <script src="data.js"></script>
+    <script src="cart.js"></script>
+    <script src="app.js"></script>
+    <script src="marketplace.js"></script>
+  </body>
+</html>

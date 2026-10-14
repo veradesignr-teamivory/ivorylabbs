@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+:root {
+  --ivory: #f6f1e7;
+  --ivory-soft: #fbf8f2;
+  --navy: #0b1d36;
+  --navy-deep: #071322;
+  --ink: #08111f;
+  --gold: #c6a046;
+  --gold-bright: #d9b45a;
+  --gold-dim: #8d7230;
+  --mist: #d7cfc0;
+  --line: rgba(198, 160, 70, 0.22);
+  --background: var(--ivory-soft);
+  --foreground: var(--navy);
+}
+
+@theme inline {
+  --color-ivory: var(--ivory);
+  --color-ivory-soft: var(--ivory-soft);
+  --color-navy: var(--navy);
+  --color-navy-deep: var(--navy-deep);
+  --color-ink: var(--ink);
+  --color-gold: var(--gold);
+  --color-gold-bright: var(--gold-bright);
+  --color-gold-dim: var(--gold-dim);
+  --color-mist: var(--mist);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-outfit);
+  --font-serif: var(--font-cormorant);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-outfit), system-ui, sans-serif;
+}
+
+::selection {
+  background: rgba(198, 160, 70, 0.28);
+  color: var(--navy);
+}
+
+.font-serif {
+  font-family: var(--font-cormorant), Georgia, serif;
+}
