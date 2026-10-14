@@ -1,0 +1,14 @@
+node_modules
+.next
+out
+src
+*.ts
+*.tsx
+tsconfig.json
+next.config.ts
+eslint.config.mjs
+postcss.config.mjs
+package.json
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
